@@ -1,0 +1,7 @@
+streamlit
+streamlit-shadcn-ui 
+yfinance
+matplotlib 
+pandas 
+numpy 
+plotly
