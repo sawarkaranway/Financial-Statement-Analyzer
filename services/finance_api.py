@@ -23,7 +23,7 @@ def _safe_df(df: Optional[pd.DataFrame]) -> pd.DataFrame:
 
 def fetch_financials_and_history(ticker: str, frequency: str = "annual", history_period: str = "1y", history_interval: str = "1d") -> Dict:
     """
-    frequency: 'annual' or 'quarterly'
+    frequency: 'Annual' or 'Quarterly'
     history_period: '1y', '2y', '5y', '10y', etc.
     history_interval: '1d', '1wk', '1mo'
     """
