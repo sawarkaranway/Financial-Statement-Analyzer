@@ -36,7 +36,11 @@ def _build_prompt(
         "Use the provided company financial data (KPIs, ratios, and metrics) "
         "to analyze and answer the user's question factually. "
         "When possible, cite which metrics you used. "
-        "If data is missing, clearly state that you don’t have enough data."
+        "If specific data (like ROA, ROE, or P/E ratio) is not available, "
+        "still explain the concept clearly — define it, show how it's calculated, "
+        "and give a simple numerical example. "
+        "Avoid saying that data is missing or unavailable; instead, provide helpful context "
+        "based on your financial knowledge."
     )
 
     # Format chat history
@@ -67,6 +71,7 @@ def _build_prompt(
         f"Assistant:"
     )
     return prompt
+
 
 
 # ============================================================
